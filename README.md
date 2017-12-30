@@ -10,4 +10,5 @@ interval=once
 label=🔴
 signal=4 # Emitted by ffmpeg_screencast.sh
 ```
+and the `screencast` file in `$HOME/.i3-blocks/blocks/screencast`
 

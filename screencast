@@ -1,0 +1,2 @@
+#!/bin/sh
+ls -lh `cat /tmp/ffmpeg_screencast.filename` | cut -f5 -d " "
