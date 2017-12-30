@@ -11,6 +11,8 @@ ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+0,0 -f pulse -ac 2
 	"$file" & pid=$!
 
 while kill -0 "$pid"; do
-	pkill -RTMIN+4 i3blocks
+	pkill -xu "$USER" -RTMIN+4 i3blocks
 	sleep 2
 done
+
+pkill -xu "$USER" -RTMIN+4 i3blocks
